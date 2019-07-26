@@ -3,7 +3,7 @@ mixin s-swiper()
 	+b.SECTION.s-swiper.section.block-with-lazy#s-swiper&attributes(attributes)
 		//- +pic('bg',"s-swiper_bg","png")
 		.container
-			.swiper-container
+			.swiper-container(class="wow fadeInUp" data-wow-duration="2s")
 				+e.wrapper.swiper-wrapper
 					.swiper-slide
 						+e.item
