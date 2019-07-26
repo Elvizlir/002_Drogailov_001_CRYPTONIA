@@ -28,7 +28,7 @@
             </li>
             <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">О нас   </a>
             </li>
-          </ul>
+          </ul><a class="menu-mobile__btn main-btn popup-with-move-anim" href="#modal-call">Заказать звонок</a>
           <div class="soc"><a class="soc__item" href="#" target="_blank"><img src="img/viber.png" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/telegram.png" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/whatsapp.png" alt=""/></a>
           </div>
           <div class="text-right"></div>
@@ -55,7 +55,7 @@
                 <div class="soc"><a class="soc__item" href="#" target="_blank"><img src="img/viber.png" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/telegram.png" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/whatsapp.png" alt=""/></a>
                 </div>
               </div>
-              <div class="col-auto d-flex align-items-center"><a class="top-nav__btn main-btn" href="#">Заказать звонок</a>
+              <div class="col-auto d-flex align-items-center"><a class="top-nav__btn main-btn popup-with-move-anim" href="#modal-call">Заказать звонок</a>
                 <div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
                 </div>
               </div>
@@ -360,8 +360,8 @@
       <!-- start s-advantages-->
       <section class="s-advantages section block-with-lazy" id="s-advantages">
         <div class="container">
-          <div class="s-advantages__wrapper row wow fadeInUp" data-wow-duration="2s">
-            <div class="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
+          <div class="s-advantages__wrapper row">
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center wow fadeInUp" data-wow-duration="2s">
               <div class="s-advantages__item">
                 <div class="s-advantages__picture-block"><img class="s-advantages__image" src="img/advantages-1.png" alt="" role="presentation"/>
                 </div>
@@ -371,7 +371,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center wow fadeInUp" data-wow-duration="2s">
               <div class="s-advantages__item">
                 <div class="s-advantages__picture-block"><img class="s-advantages__image" src="img/advantages-2.png" alt="" role="presentation"/>
                 </div>
@@ -381,7 +381,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center wow fadeInUp" data-wow-duration="2s">
               <div class="s-advantages__item">
                 <div class="s-advantages__picture-block"><img class="s-advantages__image" src="img/advantages-3.png" alt="" role="presentation"/>
                 </div>
@@ -391,7 +391,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center wow fadeInUp" data-wow-duration="2s">
               <div class="s-advantages__item">
                 <div class="s-advantages__picture-block"><img class="s-advantages__image" src="img/advantages-4.png" alt="" role="presentation"/>
                 </div>
@@ -401,7 +401,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center wow fadeInUp" data-wow-duration="2s">
               <div class="s-advantages__item">
                 <div class="s-advantages__picture-block"><img class="s-advantages__image" src="img/advantages-5.png" alt="" role="presentation"/>
                 </div>
@@ -411,7 +411,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center wow fadeInUp" data-wow-duration="2s">
               <div class="s-advantages__item">
                 <div class="s-advantages__picture-block"><img class="s-advantages__image" src="img/advantages-6.png" alt="" role="presentation"/>
                 </div>
@@ -429,40 +429,119 @@
       <section class="s-reviews section block-with-lazy" id="s-reviews">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-xl-7">
               <div class="s-reviews__image-block"> 
+                <!-- picture-->
+                <picture class="small-pic first-pic">
+                  <!-- webp images-->
+                  <source srcset="img/@2x/webp/s-service-small-1.webp " media="(min-width: 576px )" type="image/webp"/>
+                  <!-- crop 2x-->
+                  <source srcset="img/@1x/webp/s-service-small-1.webp " type="image/webp"/>
+                  <!-- /webp images -->
+                  <source srcset="img/@2x/s-service-small-1.png" media="(min-width:  576px)" type="image/png"/>
+                  <!-- crop 2x-->
+                  <source srcset="img/@1x/s-service-small-1.png" type="image/png"/><img src="img/@2x/s-service-small-1.png" alt=""/>
+                </picture>
+                <!-- /picture-->
+                <!-- picture-->
+                <picture class="small-pic second-pic">
+                  <!-- webp images-->
+                  <source srcset="img/@2x/webp/s-service-small-2.webp " media="(min-width: 576px )" type="image/webp"/>
+                  <!-- crop 2x-->
+                  <source srcset="img/@1x/webp/s-service-small-2.webp " type="image/webp"/>
+                  <!-- /webp images -->
+                  <source srcset="img/@2x/s-service-small-2.png" media="(min-width:  576px)" type="image/png"/>
+                  <!-- crop 2x-->
+                  <source srcset="img/@1x/s-service-small-2.png" type="image/png"/><img src="img/@2x/s-service-small-2.png" alt=""/>
+                </picture>
+                <!-- /picture-->
+                <!-- picture-->
+                <picture class="small-pic third-pic">
+                  <!-- webp images-->
+                  <source srcset="img/@2x/webp/s-service-small-3.webp " media="(min-width: 576px )" type="image/webp"/>
+                  <!-- crop 2x-->
+                  <source srcset="img/@1x/webp/s-service-small-3.webp " type="image/webp"/>
+                  <!-- /webp images -->
+                  <source srcset="img/@2x/s-service-small-3.png" media="(min-width:  576px)" type="image/png"/>
+                  <!-- crop 2x-->
+                  <source srcset="img/@1x/s-service-small-3.png" type="image/png"/><img src="img/@2x/s-service-small-3.png" alt=""/>
+                </picture>
+                <!-- /picture-->
+                <!-- picture-->
+                <picture class="big-pic">
+                  <!-- webp images-->
+                  <source srcset="img/@2x/webp/s-service-big-1.webp " media="(min-width: 576px )" type="image/webp"/>
+                  <!-- crop 2x-->
+                  <source srcset="img/@1x/webp/s-service-big-1.webp " type="image/webp"/>
+                  <!-- /webp images -->
+                  <source srcset="img/@2x/s-service-big-1.png" media="(min-width:  576px)" type="image/png"/>
+                  <!-- crop 2x-->
+                  <source srcset="img/@1x/s-service-big-1.png" type="image/png"/><img src="img/@2x/s-service-big-1.png" alt=""/>
+                </picture>
+                <!-- /picture-->
               </div>
             </div>
-            <div class="col-6">
-              <div class="test-block">
-                <h2 class="s-reviews__title">Отзывы
-                </h2>
-                <div class="swiper-block">
-                  <div class="reviews-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
+            <div class="col-12 col-xl-5">
+              <h2 class="s-reviews__title">Отзывы
+              </h2>
+              <div class="swiper-block">
+                <div class="reviews-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="s-reviews__item">
                         <div class="s-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
                         </div>
-                        <div class="s-reviews__item-name">- Артур Дубасов
+                        <div class="s-reviews__item-name">-  Артур Дубасов
                         </div>
                         <div class="s-reviews__item-subname">Директор компании
                         </div>
                       </div>
                     </div>
-                    <div class="s-reviews__swiper-btn-block">
-                      <div class="s-reviews__swiper-btn swiper-button-prev">
+                    <div class="swiper-slide">
+                      <div class="s-reviews__item">
+                        <div class="s-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
+                        </div>
+                        <div class="s-reviews__item-name">-  Артур Дубасов
+                        </div>
+                        <div class="s-reviews__item-subname">Директор компании
+                        </div>
                       </div>
-                      <div class="s-reviews__swiper-btn swiper-button-next">
-                      </div>
+                    </div>
+                  </div>
+                  <div class="s-reviews__swiper-btn-block">
+                    <div class="s-reviews__btn-prev">
+                    </div>
+                    <div class="s-reviews__btn-next">
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="s-reviews__text">Мы будем рады вашему отзыву о работе с нами!
+              </div><a class="s-reviews__btn main-btn" href="#">Оставить отзыв</a>
             </div>
           </div>
         </div>
       </section>
       <!-- end s-reviews-->
+      <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-form" id="modal-call">
+        <form>
+          <div class="text-center">
+            <div class="form-wrap__title h3 ttu">Обратный звонок
+            </div>
+            <p>Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут</p>
+          </div>
+          <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="ФИО" name="text" required="required"/>
+          </div>
+          <!-- +e.input-wrap-->
+          <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="tel" placeholder="Контактный телефон" name="tel" required="required"/>
+          </div>
+          <!-- +e.input-wrap-->
+          <button class="form-wrap__btn main-btn" type="submit">Отправить 
+          </button>
+        </form>
+      </div>
+      <!-- #modal-call-->
+      <!-- modal--><a class="page-up disabled" id="page-up" href="#header-block"></a>
     </div>
     <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-form" id="modal-call">
       <form>
@@ -471,16 +550,14 @@
           </div>
           <p>Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут</p>
         </div>
-        <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="Ваше Имя" placeholder="text" name="Ваше Имя" required="required"/>
+        <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="ФИО" name="text" required="required"/>
         </div>
         <!-- +e.input-wrap-->
-        <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="Ваш телефон" placeholder="tel" name="Ваш телефон" required="required"/>
+        <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="tel" placeholder="Контактный телефон" name="tel" required="required"/>
         </div>
-        <!-- +e.input-wrap--><input class="form-wrap__btn btn btn-block btn-warning mb-4" type="submit" value="Рассчитать"/>
-        <div class="form-wrap__polite">
-          <label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
-          </label>
-        </div>
+        <!-- +e.input-wrap-->
+        <button class="form-wrap__btn main-btn" type="submit">Отправить 
+        </button>
       </form>
     </div>
     <!-- #modal-call-->

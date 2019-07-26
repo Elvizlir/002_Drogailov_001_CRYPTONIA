@@ -36,11 +36,12 @@ mixin modal()
 		.text-center
 			+e.title.h3.ttu Обратный звонок
 			p Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течении 15&nbsp;минут
-		+input("text","Ваше Имя")(required) 
-		+input("tel","Ваш телефон")(required)
+		+input("ФИО","text")(required) 
+		+input("Контактный телефон","tel")(required)
 		//- +input("email","Ваше email")(required)
 		//- +text( "Комментарий")
-		+e.INPUT.btn.btn.btn-block.btn-warning.mb-4(type="submit" value="Рассчитать") 
-		+polite()
+		//- +e.INPUT.btn.main-btn
+		+e.BUTTON.btn.main-btn(type="submit") Отправить 
+		//- +polite()
 	// #modal-call
 	// modal

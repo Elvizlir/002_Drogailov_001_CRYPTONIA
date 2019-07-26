@@ -7,6 +7,7 @@ mixin mob-mnu()
 		+e.inner
 
 			+mnu()
+			+e.A.btn.main-btn.popup-with-move-anim(href="#modal-call") Заказать звонок
 			+soc()
 			.text-right
 	//  мобильное меню
@@ -22,7 +23,7 @@ mixin top-nav()
 					+e.A.phone(href="tel:+375(29)122-44-99") +375 29 <span>122-44-99</span>
 					+soc()
 				.col-auto.d-flex.align-items-center
-					+e.A.btn.main-btn(href="#") Заказать звонок
+					+e.A.btn.main-btn.popup-with-move-anim(href="#modal-call") Заказать звонок
 					+b.toggle-menu-mobile--js
 						span
 					

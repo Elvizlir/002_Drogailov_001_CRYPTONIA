@@ -1,13 +1,96 @@
 .s-reviews {
-	margin-top: rem(-92);
+	// margin-top: rem(-92);
 	background-image: url(../img/s-reviews_bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	@include media-breakpoint-up(md) {
-		padding: rem(71) 0;
+		padding: rem(71) 0 rem(218);
 	}
-	.test-block{
-		margin-left: rem(98);
+	@include media-breakpoint-down(sm) {
+		padding: rem(30) 0 rem(60);
+	}
+	
+	// .test-block{
+	// 	margin-left: rem(98);
+	// }
+	picture{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		img{
+			position: absolute;
+		}
+	}
+	&__image-block{
+		height: rem(500);
+		position: relative;
+		@include media-breakpoint-up(xl) {
+			@include block(682,512);
+		}
+		@media (max-width: 1400px){
+			display: none;
+		}
+	}
+	.big-pic{
+		img{
+			@include media-breakpoint-down(lg) {
+				@include a-cent(x);
+				top: 0;
+			}
+			top: 33%;
+			left: 35%;
+		}
+	}
+	.first-pic{
+		img{
+			@include media-breakpoint-down(lg) {
+				top: 40%;
+				left: 25%;
+
+			}
+			top: 12%;
+			left: 16%;
+		}
+	}
+	.second-pic{
+		img{
+			@include media-breakpoint-down(lg) {
+				@include a-cent(x);
+				top: 70%;	
+			}
+			top: 50%;
+			left: 0;
+		}
+	}
+	.third-pic{
+		img{
+			top: 89%;
+			left: 11%;
+			@include media-breakpoint-down(lg) {
+				top: 40%;
+				left: 62%;	
+			}
+		}
+	}
+	.reviews-container{
+		overflow: hidden;
+	}
+	&__item{
+		padding-top: rem(75);
+		position: relative;
+		&::before{
+			content: "";
+			position: absolute;
+			top: rem(9);
+			left: rem(1);
+			background-image: url(../img/quote-left.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: rem(43);
+			height: rem(33);
+		}
 	}
 	&__item-text{
 		color: #333333;
@@ -15,20 +98,75 @@
 		line-height: rem(27);
 		font-weight: 500;
 		letter-spacing: 0;
+		padding-bottom: rem(26);
+		position: relative;
+		&::after{
+			content: "";
+			position: absolute;
+			bottom: rem(-6);
+			right: 0;
+			background-image: url(../img/quote-right.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: rem(43);
+			height: rem(33);
+		}
+	}
+	&__item-name{
+		color: #333333;
+		font-size: rem(18);
+		line-height: rem(27);
+		padding-left: rem(4);
+	}
+	&__item-subname{
+		color: #929292;
+		line-height: rem(27);
+		font-size: rem(14);
+		// padding-left: rem(5);
 	}
 	&__swiper-btn-block{
 		display: flex;
+		margin-top: rem(41);
+		margin-bottom: rem(35);
 	}
-	&__swiper-btn{
-		position: relative;
-		display: block;
-		margin: 0;
+	&__btn-prev{
+		width: rem(65);
+		height: rem(30);
+		background-image: url(../img/swiper-btn-prev.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		transition: all .2s ease;
+		margin-right: rem(25);
+		&:hover{
+			opacity: .7;
+		}
+	}
+	&__btn-next{
+		width: rem(65);
+		height: rem(30);
+		background-image: url(../img/swiper-btn-next.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		transition: all .2s ease;
+		&:hover{
+			opacity: .7;
+		}
 	}
 	h2{
-
 		&::after{
 			content: none;
 		}
+	}
+	&__text{
+		color: #333333;
+		font-size: rem(18);
+		line-height: rem(27);
+		margin-bottom: rem(32);
+	}
+	&__btn{
+		max-width: rem(190);
 	}
 		 
 	@include media-breakpoint-up(xl) {}

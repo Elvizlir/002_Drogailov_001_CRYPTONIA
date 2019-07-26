@@ -85,7 +85,37 @@ jQuery(document).ready(function ($) {
 
 	       return false;
 	   }); 
+	
 
+			var $win = $(window),
+			$fixed = $(".page-up"),
+			limit = 2000;
+
+			function tgl (state) {
+			$fixed.toggleClass("disabled", state);
+			}
+
+			$win.on("scroll", function () {
+			var top = $win.scrollTop();
+
+			if (top < limit) {
+				tgl(true);
+			} else {
+				tgl(false);
+			}
+			});
+
+			$("#page-up").on("click", function (event) {	
+				//отменяем стандартную обработку нажатия по ссылке
+				event.preventDefault();
+				//забираем идентификатор бока с атрибута href
+				var id  = $(this).attr('href'),
+				//узнаем высоту от начала страницы до блока на который ссылается якорь
+						top = $(id).offset().top;
+				//анимируем переход на расстояние - top за 1500 м
+				$('body,html').animate({scrollTop: top}, 1000);
+			});
+				
 	// var icon = '<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 492.004 492.004" style="enable-background:new 0 0 492.004 492.004;" xml:space="preserve" ><path d="M382.678,226.804L163.73,7.86C158.666,2.792,151.906,0,144.698,0s-13.968,2.792-19.032,7.86l-16.124,16.12    c-10.492,10.504-10.492,27.576,0,38.064L293.398,245.9l-184.06,184.06c-5.064,5.068-7.86,11.824-7.86,19.028    c0,7.212,2.796,13.968,7.86,19.04l16.124,16.116c5.068,5.068,11.824,7.86,19.032,7.86s13.968-2.792,19.032-7.86L382.678,265    c5.076-5.084,7.864-11.872,7.848-19.088C390.542,238.668,387.754,231.884,382.678,226.804z" ></path>';
 
 	// var arrl2 = (' <div class="r">' + icon),
@@ -153,8 +183,28 @@ jQuery(document).ready(function ($) {
 				spaceBetween: 10
 			}
 		}
-			
 
+	});
+	var swiper4 = new Swiper('.reviews-container', {
+		slidesPerView: 1,
+		// slidesPerView: 'auto',
+		// watchOverflow: false,
+
+		// freeMode: true,
+		// watchOverflow: true,
+		// slidesPerGroup: 1,
+		spaceBetween: 30,
+		speed: 900,
+		// centeredSlides: true,
+		loop: true,
+		// loopFillGroupWithBlank: true,
+		// touchRatio: 0.2,
+		// slideToClickedSlide: true,
+		// freeModeMomentum: true,
+		navigation: {
+			nextEl: '.s-reviews__btn-next',
+			prevEl: '.s-reviews__btn-prev',
+		},
 	});
 	// modal window
 

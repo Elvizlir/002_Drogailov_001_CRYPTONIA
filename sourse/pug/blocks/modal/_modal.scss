@@ -1,15 +1,27 @@
 .modal-win {
 	display: block;
 	position: relative;
-	.modal-content {
-		// max-width: 485px;
-		// padding-right: 40px 15px;
-	}
+	background-color: #fff;
+	max-width: rem(700);
+	padding: rem(30) rem(20);
+	margin: 0 auto;
 	.mfp-close {
 		color: $primary;
 		font-size: 40px;
 		font-weight: 100;
 	}   
+	.form-wrap{
+		&__title{
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			color: #333333;
+			background-image: linear-gradient(to top, #9d4edf 0%, #1977fd 100%);
+			font-weight: 600;
+		}
+	}
+}
+.mfp-container{
+	padding: 0 rem(10) !important;
 }
 
 a {
@@ -62,9 +74,6 @@ a {
 	margin-top: -5px;
 	margin-right: -5px;
 	@include mt;
-	&:hover {
-		// background-color: #e3f3f6;
-	}
 }
 
 @include media-breakpoint-up(sm) { 

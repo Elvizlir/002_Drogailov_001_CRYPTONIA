@@ -23,11 +23,15 @@ html {
 	font-size: $em-base;
 	// @include font-size(1rem);
 	// background-color: #010101;
+	background-image: url(../img/main_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: center;
 
 }
 
 body {
-	height: 5000px;
+	// height: 5000px;
 	min-width: 320px;
 	position: relative;
 
@@ -512,4 +516,37 @@ h2{
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+}
+.page-up{
+	width: rem(45);
+	height: rem(45);
+	border-radius: 3px;
+	background-color: $primary;
+	background-image: linear-gradient(-210deg, #9d4edf 0%, #1977fd 100%);
+	position: fixed;
+	z-index: 500;
+	bottom: rem(66);
+	right: rem(149);
+	transition: all .2s ease;
+	&:hover{
+		opacity: .7;
+	}
+	&::after{
+		content: "";
+		position: absolute;
+		height: rem(24);
+		width: rem(17);
+		background-image: url(../img/page-up.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		@include a-cent(x);
+		top: rem(11);
+	}
+	@include media-breakpoint-down(md){
+		right: rem(30);
+	}
+}
+.disabled{
+	display: none;
+	transition: all .2s ease;
 }

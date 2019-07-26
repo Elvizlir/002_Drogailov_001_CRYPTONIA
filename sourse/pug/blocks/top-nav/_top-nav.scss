@@ -328,4 +328,8 @@ $h: em(2);
 			background-image: linear-gradient(-240deg, #9d4edf 30%, #1977fd 100%);
 		}
 	}
+	&__btn{
+		max-width: rem(270);
+		margin-left: rem(5);
+	}
 }

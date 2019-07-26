@@ -3,23 +3,31 @@ mixin s-reviews()
 	+b.SECTION.s-reviews.section.block-with-lazy#s-reviews&attributes(attributes)
 		.container
 			.row
-				.col-6
+				.col-12.col-xl-7
 					+e.image-block 
-						//- +pic("","s-service-small-1","png")(class="small-pic")
-						//- +pic("","s-service-small-2","png")(class="small-pic")
-						//- +pic("","s-service-small-3","png")(class="small-pic")
-						//- +pic("","s-service-big-1","png")(class="big-pic")
-				.col-6
-					.test-block
-						+e.H2.title Отзывы
-						.swiper-block
-							.reviews-container
-								.swiper-wrapper
-									.swiper-slide
+						+pic("","s-service-small-1","png")(class="small-pic first-pic")
+						+pic("","s-service-small-2","png")(class="small-pic second-pic")
+						+pic("","s-service-small-3","png")(class="small-pic third-pic")
+						+pic("","s-service-big-1","png")(class="big-pic")
+				.col-12.col-xl-5
+					//- .test-block
+					+e.H2.title Отзывы
+					.swiper-block
+						.reviews-container
+							.swiper-wrapper
+								.swiper-slide
+									+e.item
 										+e.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
-										+e.item-name - Артур Дубасов
+										+e.item-name -  Артур Дубасов
 										+e.item-subname Директор компании
-								+e.swiper-btn-block
-									+e.swiper-btn.swiper-button-prev
-									+e.swiper-btn.swiper-button-next
+								.swiper-slide
+									+e.item
+										+e.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
+										+e.item-name -  Артур Дубасов
+										+e.item-subname Директор компании
+							+e.swiper-btn-block
+								+e.btn-prev
+								+e.btn-next
+					+e.text Мы будем рады вашему отзыву о работе с нами!
+					+e.A.btn.main-btn(href="#") Оставить отзыв
 	// end s-reviews

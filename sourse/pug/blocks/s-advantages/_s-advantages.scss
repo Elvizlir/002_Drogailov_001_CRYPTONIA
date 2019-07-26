@@ -34,8 +34,11 @@
 		color: #333333;
 		font-size: rem(18);
 		// &:not(:last-child){
-		// 	margin-right: rem(30);
-		// }
+			// 	margin-right: rem(30);
+			// }
+			@include media-breakpoint-down(sm){
+				margin-bottom: rem(25);
+		}
 	}
 	&__title{
 		// font-size: rem(18);
