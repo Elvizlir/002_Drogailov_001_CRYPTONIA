@@ -79,15 +79,18 @@ mixin arrow()
 //- scial buttons
 mixin soc()
 	+b.soc
-		mixin item()
-			+e.A.item(href="#" target="_blank")
-				block
-		+item()
+		+e.A.item(href="#" target="_blank")
 			img(src="img/viber.png" alt="")
-		+item()
-			img(src="img/telegram.png" alt="")
-		+item()
-			img(src="img/whatsapp.png" alt="")
+		+e.A.item(href="#" target="_blank")
+			img(src="img/viber.png" alt="")
+		+e.A.item(href="#" target="_blank")
+			img(src="img/viber.png" alt="")
+		//- +item()
+			
+		//- +item()
+		//- 	img(src="img/telegram.png" alt="")
+		//- +item()
+		//- 	img(src="img/whatsapp.png" alt="")
 //- /scial buttons
 //- WP menu
 //- mixin mnu()

@@ -31,6 +31,9 @@
 		overflow: hidden;
 		// border: 1px solid #000;
 		transition: all .5s ease;
+		@include media-breakpoint-down(sm) {
+			padding: rem(15) rem(10);
+		}
 		picture{
 			height: auto;
 			margin-bottom: rem(17);
@@ -65,12 +68,19 @@
 		font-size: rem(20);
 		line-height: rem(23);
 		margin-bottom: rem(32);
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(15);
+		}
 	}
 	&__item-text{
 		flex-grow: 1;
 		color: #929292;
 		line-height: rem(23);
 		margin-bottom: rem(29);
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(15);
+
+		}
 	}
 	&__item-price{
 		background-image: linear-gradient(-210deg, #9d4edf 40%, #1977fd 70%);
@@ -80,6 +90,9 @@
 		line-height: rem(36);
 		-webkit-text-fill-color: transparent;
 		margin-bottom: rem(28);
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(15);
+		}
 		span{
 			font-family: $font-family-sans-serif;
 			font-size: 16px;
@@ -113,6 +126,9 @@
 		font-family: $font-family-monospace;
 		font-weight: 500;
 		margin-bottom: rem(21);
+		@include media-breakpoint-down(sm) {
+			margin-bottom: rem(12);			
+		}
 	}
 
 	@include media-breakpoint-up(xl) {}

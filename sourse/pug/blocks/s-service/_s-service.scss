@@ -69,7 +69,7 @@
 	}
 	.big-roller{
 		img{
-			z-index: -1;
+			z-index: 1;
 			position: absolute;
 			top: 57%;
 			left: 40.6%;
@@ -92,6 +92,7 @@
 		}
 	}
 	.s-service-img{
+		z-index: 3;
 		img{
 			max-width: 100%;
 		}
@@ -111,6 +112,11 @@
 			&:not(:last-child){
 				margin-bottom: rem(34);
 			}
+		@include media-breakpoint-down(sm) {
+			&:not(:last-child){
+				margin-bottom: rem(15);
+			}
+		}
 		@include media-breakpoint-up(md) {
 			&::before{
 				content: "";

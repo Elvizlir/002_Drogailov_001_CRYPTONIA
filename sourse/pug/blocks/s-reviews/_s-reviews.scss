@@ -26,51 +26,69 @@
 	&__image-block{
 		height: rem(500);
 		position: relative;
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(lg) {
 			@include block(682,512);
 		}
-		@media (max-width: 1400px){
+		@include media-breakpoint-only(md) {
+			@include block(690,500);
+		}
+		@include media-breakpoint-down(xs){
 			display: none;
 		}
 	}
 	.big-pic{
 		img{
-			@include media-breakpoint-down(lg) {
+			@include media-breakpoint-down(md) {
 				@include a-cent(x);
 				top: 0;
 			}
-			top: 33%;
-			left: 35%;
+			@include media-breakpoint-up(lg) {
+				top: 33%;
+				left: 35%;
+			}
 		}
 	}
 	.first-pic{
 		img{
-			@include media-breakpoint-down(lg) {
-				top: 40%;
-				left: 25%;
-
+			@include media-breakpoint-down(md) {
+				left: 5%;
+				top: 50%;
 			}
-			top: 12%;
-			left: 16%;
+			@include media-breakpoint-down(sm) {
+				left: 0;
+				top: 55%;
+			}
+			@include media-breakpoint-up(lg) {
+				top: 12%;
+				left: 16%;
+			}
 		}
 	}
 	.second-pic{
 		img{
-			@include media-breakpoint-down(lg) {
+			@include media-breakpoint-down(md) {
 				@include a-cent(x);
 				top: 70%;	
 			}
-			top: 50%;
-			left: 0;
+			@include media-breakpoint-up(lg) {
+				top: 50%;
+				left: 0;
+			}
 		}
 	}
 	.third-pic{
 		img{
-			top: 89%;
-			left: 11%;
-			@include media-breakpoint-down(lg) {
-				top: 40%;
-				left: 62%;	
+			@include media-breakpoint-up(lg) {
+				top: 89%;
+				left: 11%;
+			}
+			@include media-breakpoint-down(md) {
+				top: 50%;
+				right: 5%;	
+			}
+			@include media-breakpoint-down(md) {
+				top: 55%;
+				right: 0;	
 			}
 		}
 	}
