@@ -1,0 +1,7 @@
+
+
+@include font-face ("MyriadPro", "../fonts/MyriadPro-Regular/MyriadPro-Regular", 400, $file-formats: woff2 woff ttf);
+@include font-face ("MyriadPro", "../fonts/MyriadPro-Semibold/MyriadPro-Semibold", 600, $file-formats: woff2 woff ttf);
+// @include font-face ("MyriadPro", "../fonts/MyriadPro-Medium/MyriadPro-Medium", 400, $file-formats: woff2 woff ttf);
+@include font-face ("Quicksand", "../fonts/Quicksand-Regular/Quicksand-Regular", 400, $file-formats: woff2 woff ttf);
+@include font-face ("Quicksand", "../fonts/Quicksand-Medium/Quicksand-Medium", 500, $file-formats: woff2 woff ttf);

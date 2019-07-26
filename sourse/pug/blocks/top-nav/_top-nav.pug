@@ -1,0 +1,29 @@
+
+mixin mob-mnu()
+	
+	+b.menu-mobile--js
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+
+			+mnu()
+			+soc()
+			.text-right
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			+e.row.row
+				.col-auto.d-flex.align-items-center
+					+e.IMG.logo(src="img/header_logo.png" alt="#")
+				+e.mnu-col.col.align-items-center.justify-content-end
+					+mnu()
+					+e.A.phone(href="tel:+375(29)122-44-99") +375 29 <span>122-44-99</span>
+					+soc()
+				.col-auto.d-flex.align-items-center
+					+e.A.btn.main-btn(href="#") Заказать звонок
+					+b.toggle-menu-mobile--js
+						span
+					
+	// end top-nav
