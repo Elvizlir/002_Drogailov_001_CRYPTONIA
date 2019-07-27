@@ -504,6 +504,7 @@ h2{
 	margin-bottom: rem(25);
 	display: inline-block;
 	position: relative;
+	z-index: 5;
 	&::after{
 		content: "";
 		position: absolute;
