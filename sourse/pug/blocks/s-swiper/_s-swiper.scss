@@ -130,6 +130,9 @@
 			margin-bottom: rem(12);			
 		}
 	}
+	.swiper-btn-block{
+		justify-content: center;
+	}
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

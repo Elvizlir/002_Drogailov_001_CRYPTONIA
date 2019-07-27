@@ -42,5 +42,16 @@ mixin modal()
 		//- +text( "Комментарий")
 		//- +e.INPUT.btn.main-btn
 		+e.BUTTON.btn.main-btn(type="submit") Отправить 
+	+form-wrap()(id="modal-call-2" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
+		.text-center
+			+e.title.h3.ttu Оставить отзыв
+			p Оставьте Ваш отзыв о работе с нами 
+		+input("ФИО","text")(required) 
+		+input("Должность","text")(required)
+		+input("Ваш отзыв","textarea")(required)
+		//- +input("email","Ваше email")(required)
+		//- +text( "Комментарий")
+		//- +e.INPUT.btn.main-btn
+		+e.BUTTON.btn.main-btn(type="submit") Отправить 
 		//- +polite()
 	//- // modal

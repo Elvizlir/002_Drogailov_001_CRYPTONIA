@@ -19,11 +19,11 @@ mixin s-reviews()
 										+e.item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
 										+e.item-name -  Артур Дубасов
 										+e.item-subname Директор компании
-							+e.swiper-btn-block
-								+e.btn-prev
-								+e.btn-next
+							+b.swiper-btn-block
+								+e.btn-prev#reviews-prev
+								+e.btn-next#reviews-next
 					+e.text Мы будем рады вашему отзыву о работе с нами!
-					+e.A.btn.main-btn(href="#") Оставить отзыв
+					+e.A.btn.main-btn.popup-with-move-anim(href="#modal-call-2") Оставить отзыв
 				.col-12.col-lg-7.order-lg-first(class="wow fadeInLeft" data-wow-duration="1s")
 					+e.image-block 
 						+pic("","s-service-small-1","png")(class="small-pic first-pic")

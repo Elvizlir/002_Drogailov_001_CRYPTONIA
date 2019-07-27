@@ -145,36 +145,6 @@
 		font-size: rem(14);
 		// padding-left: rem(5);
 	}
-	&__swiper-btn-block{
-		display: flex;
-		margin-top: rem(41);
-		margin-bottom: rem(35);
-	}
-	&__btn-prev{
-		width: rem(65);
-		height: rem(30);
-		background-image: url(../img/swiper-btn-prev.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		cursor: pointer;
-		transition: all .2s ease;
-		margin-right: rem(25);
-		&:hover{
-			opacity: .7;
-		}
-	}
-	&__btn-next{
-		width: rem(65);
-		height: rem(30);
-		background-image: url(../img/swiper-btn-next.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		cursor: pointer;
-		transition: all .2s ease;
-		&:hover{
-			opacity: .7;
-		}
-	}
 	h2{
 		&::after{
 			content: none;
