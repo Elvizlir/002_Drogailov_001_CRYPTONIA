@@ -23,10 +23,6 @@ html {
 	font-size: $em-base;
 	// @include font-size(1rem);
 	// background-color: #010101;
-	background-image: url(../img/main_bg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-y: center;
 
 }
 
@@ -119,7 +115,12 @@ body {
 }
 
 
-.main-wrapper {position: relative;overflow: hidden;height: 100%;}
+.main-wrapper {position: relative;overflow: hidden;height: 100%;
+	background-image: url(../img/main_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: center;
+}
 
 .slick-slide img {
 	display: inline

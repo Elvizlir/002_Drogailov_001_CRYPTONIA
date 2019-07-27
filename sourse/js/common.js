@@ -160,7 +160,11 @@ jQuery(document).ready(function ($) {
 		},
 	});
 	// modal window
-
+	$('.main-wrapper').mousemove(function(e){
+    var amountMovedX = (e.pageX * -1 / 100);
+    var amountMovedY = (e.pageY * -1 / 100);
+    $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+	});
 
  
  
