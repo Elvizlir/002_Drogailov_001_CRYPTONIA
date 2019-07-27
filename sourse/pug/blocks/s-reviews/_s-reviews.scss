@@ -73,6 +73,9 @@
 				@include a-cent(x);
 				top: 70%;	
 			}
+			@include media-breakpoint-down(xs){
+				top: 80%;
+			}
 			@include media-breakpoint-up(lg) {
 				top: 50%;
 				left: 0;

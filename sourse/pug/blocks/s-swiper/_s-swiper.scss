@@ -13,6 +13,9 @@
 		@media (max-width: 1000px){
 			padding: rem(40);
 		}
+		@include media-breakpoint-down(sm){
+			padding: 0;
+		}
 	}
 	.swiper-slide{
 		height: auto;
@@ -70,6 +73,8 @@
 		margin-bottom: rem(32);
 		@include media-breakpoint-down(sm) {
 			margin-bottom: rem(15);
+			font-size: rem(16);
+			margin-bottom: 0;
 		}
 	}
 	&__item-text{
@@ -79,7 +84,11 @@
 		margin-bottom: rem(29);
 		@include media-breakpoint-down(sm) {
 			margin-bottom: rem(15);
-
+			font-size: rem(12);
+			
+			br{
+				display: none;
+			}
 		}
 	}
 	&__item-price{
@@ -132,6 +141,10 @@
 	}
 	.swiper-btn-block{
 		justify-content: center;
+		@include media-breakpoint-down(sm){
+			margin-top: rem(20);
+			margin-bottom: 0;
+		}
 	}
 
 	@include media-breakpoint-up(xl) {}
