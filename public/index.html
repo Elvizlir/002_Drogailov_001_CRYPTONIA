@@ -68,18 +68,8 @@
       <!-- start header-block-->
       <div class="header-block" id="header-block">
         <div class="container">
-          <!-- picture-->
-          <picture>
-            <!-- webp images-->
-            <source srcset="img/@2x/webp/header-block_image.webp " media="(min-width: 576px )" type="image/webp"/>
-            <!-- crop 2x-->
-            <source srcset="img/@1x/webp/header-block_image.webp " type="image/webp"/>
-            <!-- /webp images -->
-            <source srcset="img/@2x/header-block_image.png" media="(min-width:  576px)" type="image/png"/>
-            <!-- crop 2x-->
-            <source srcset="img/@1x/header-block_image.png" type="image/png"/><img src="img/@2x/header-block_image.png" alt=""/>
-          </picture>
-          <!-- /picture-->
+          <div class="header-block__image-wrapper"><img class="header-block__image" src="img/header-block_image.png" alt="" role="presentation"/>
+          </div>
           <h2>Индивидуальный консалтинг</h2>
           <div class="header-block__text">Возможность зарабатывать даже в кризис
           </div>

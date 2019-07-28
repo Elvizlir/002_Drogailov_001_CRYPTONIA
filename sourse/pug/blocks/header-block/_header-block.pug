@@ -2,7 +2,9 @@ mixin header-block()
 	// start header-block
 	+b.header-block#header-block
 		.container
-			+pic("", "header-block_image", "png")
+			//- +pic("", "header-block_image", "png")
+			+e.image-wrapper
+				+e.IMG.image(src="img/header-block_image.png")
 			h2 Индивидуальный консалтинг
 			+e.text Возможность зарабатывать даже в кризис
 	// end header-block

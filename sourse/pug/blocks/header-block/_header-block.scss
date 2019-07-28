@@ -8,13 +8,11 @@
 		padding-bottom: rem(23);
 	}
 	text-align: center;
-	picture{
-		height: auto;
-		// justify-content: center;
+	&__image-wrapper{
 		margin-bottom: rem(45);
-		img{
-			max-width: 67%;
-		}
+	}
+	&__image{
+		max-width: 67%;
 	}
 	&__text{
 		color: #929292;
